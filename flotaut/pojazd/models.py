@@ -27,7 +27,7 @@ class Pojazd(models.Model):
     kategoria = models.CharField(max_length=45)
     rok_produkcji = models.IntegerField()
     data_pierwszej_rejestracji = models.DateField()
-    numer_vin = models.CharField(max_length=12)
+    numer_vin = models.CharField(max_length=24)
     przeznaczenia = models.CharField(max_length=45)
     numer_dowodu_rejestracyjnego = models.CharField(max_length=12)
     numer_karty_pojazdu = models.CharField(max_length=12)
@@ -38,6 +38,7 @@ class Pojazd(models.Model):
     hak = models.CharField(max_length=3, choices=hak_wybor, default=NIE)
     pojemnosc_silnika = models.IntegerField()
     moc_silnika = models.IntegerField()
+    masa_wlasna = models.IntegerField(null=True, blank=True)
     masa_calkowita = models.IntegerField()
     ladownosc = models.IntegerField()
     jednostka_organizacyjna = models.ForeignKey('jednostka_organizacyjna.Jednostka_Organizacyjna',
