@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="552fd1bc-9589-479b-b9c6-a6aef0a458cc" name="Changes" comment="utworzona baza danych - Badanie_Techniczne">
-      <change afterPath="$PROJECT_DIR$/flotaut/karty_paliwowe/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/karty_paliwowe/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/karty_paliwowe/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/karty_paliwowe/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/karty_paliwowe/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/karty_paliwowe/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/karty_paliwowe/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/karty_paliwowe/views.py" afterDir="false" />
+    <list default="true" id="552fd1bc-9589-479b-b9c6-a6aef0a458cc" name="Changes" comment="utworzona baza danych - Karty_Paliwowe">
+      <change afterPath="$PROJECT_DIR$/flotaut/inspekcja/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/inspekcja/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/inspekcja/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/inspekcja/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/inspekcja/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/inspekcja/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/inspekcja/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/inspekcja/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/karty_paliwowe/migrations/0002_alter_karty_paliwowe_data_waznosci_karty.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/migrations/0003_auto_20220111_2130.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/ubezpieczenie/migrations/0002_alter_ubezpieczenie_rodzaj_polisy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/badanie_techniczne/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/badanie_techniczne/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flotaut/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flotaut/flotaut/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/flotaut/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/jednostka_organizacyjna/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/jednostka_organizacyjna/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/karty_paliwowe/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/karty_paliwowe/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/koszty/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/koszty/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/pojazd/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/pojazd/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/ubezpieczenie/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/ubezpieczenie/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/uzytkownik/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/uzytkownik/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641918015811</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="utworzona baza danych - Karty_Paliwowe">
+      <created>1641919360051</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641919360051</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -201,7 +218,8 @@
     <MESSAGE value="utworzona baza danych - Koszty" />
     <MESSAGE value="utworzona baza danych - Ubezpieczenie" />
     <MESSAGE value="utworzona baza danych - Badanie_Techniczne" />
-    <option name="LAST_COMMIT_MESSAGE" value="utworzona baza danych - Badanie_Techniczne" />
+    <MESSAGE value="utworzona baza danych - Karty_Paliwowe" />
+    <option name="LAST_COMMIT_MESSAGE" value="utworzona baza danych - Karty_Paliwowe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

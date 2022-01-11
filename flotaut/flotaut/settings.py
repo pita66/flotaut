@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'koszty',
     'ubezpieczenie',
     'badanie_techniczne',
-    'karty_paliwowe'
+    'karty_paliwowe',
+    'inspekcja'
 ]
 
 MIDDLEWARE = [

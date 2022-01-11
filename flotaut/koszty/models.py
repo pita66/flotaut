@@ -24,3 +24,5 @@ class Koszty(models.Model):
     pojazd = models.ForeignKey('pojazd.Pojazd', on_delete=models.CASCADE, null=True, blank=True)
     rodzaj_kosztow = models.CharField(max_length=45, choices=rodzaj_kosztow_wybor, blank=False)
 
+    def __str__(self):
+        return self.numer_dokumentu
