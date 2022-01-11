@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'jednostka_organizacyjna',
     'uzytkownik',
     'pojazd',
-    'koszty'
+    'koszty',
+    'ubezpieczenie'
 ]
 
 MIDDLEWARE = [
