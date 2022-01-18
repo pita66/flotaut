@@ -1,10 +1,24 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Wykaz Jednostek Organizacyjnych</title>
+    <link rel="stylesheet" href="{% static 'app_jed_org.css' %}">
 </head>
 <body>
-    <h2>Tu będzie wykaz Jednostek Organizacyjnych</h2>
+    <h2>Wykaz Jednostek Organizacyjnych</h2>
+
+    {% if jednostka_organizacyjna|length == 0 %}
+        <h3>brak jednostek organizacyjnych</h3>
+    {% else %}
+        <h3>ilość wszystkich jednostek organizacyjnych : {{ jednostka_organizacyjna|length }}</h3>
+
+        {% for Jednostka_Organizacyjna in jednostka_organizacyjna %}
+            <p>{{ Jednostka_Organizacyjna }}</p>
+        {% endfor %}
+
+    {% endif %}
+
 </body>
 </html>

@@ -1,10 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Wykaz Pojazdów</title>
-</head>
-<body>
-    <h2>Tu będzie wykaz Pojazdów</h2>
-</body>
-</html>
+{% extends 'glowny.html' %}
+
+{% block tytul %} Wykaz pojazdów {% endblock %}
+
+{% block strona %}
+
+    {% if user.is_authenticated %}
+        witaj {{ user.username }}<br>
+        <a href="{% url 'logout' %}">Logout <i class="fas fa-sign-out-alt"></i></a>
+    {% else %}
+        <a href="{% url 'login' %}">Login <i class="fas fa-sign-in-alt"></i></a>
+    {% endif %}
+    <br>
+
+    <hr>
+
+    <a href="{% url 'nowy_pojazd' %}"><i class="far fa-plus-square"></i></a> Nowy pojazd
+
+    <h2>Wykaz Pojazdów</h2>
+
+    {% if pojazd|length == 0 %}
+        <h4>brak pojazdów</h4>
+    {% else %}
+        <h4>ilość wszystkich pojazdów : {{ pojazd|length }}</h4>
+
+    <hr>
+
+        {% for Pojazd in pojazd %}
+            <div class="card" style="width: 36rem;">
+              <div class="card-body">
+                <h5 class="card-title">{{ Pojazd }}</h5>
+                <p class="card-text">Jednostka organizacyjna : {{ Pojazd.jednostka_organizacyjna }} <br> Użytkownik : {{ Pojazd.uzytkownik }}</p>
+                    <a href="{% url 'edytuj_pojazd' Pojazd.id  %}"><i class="far fa-2x fa-edit"></i></a>
+                    <a href="{% url 'usun_pojazd' Pojazd.id  %}"><i class="far fa-2x fa-trash-alt"></i></a>
+              </div>
+            </div>
+            <h3></h3>
+            <p></p>
+
+        {% endfor %}
+
+    {% endif %}
+
+{% endblock %}

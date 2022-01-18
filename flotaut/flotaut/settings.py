@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'ubezpieczenie',
     'badanie_techniczne',
     'karty_paliwowe',
-    'inspekcja'
+    'inspekcja',
+    'bootstrapform'
 ]
 
 MIDDLEWARE = [
@@ -123,7 +124,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = ['static_proj']
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'media'
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'wszystkie_pojazdy'
+LOGOUT_REDIRECT_URL = 'wszystkie_pojazdy'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

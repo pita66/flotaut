@@ -2,30 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="552fd1bc-9589-479b-b9c6-a6aef0a458cc" name="Changes" comment="utworzona baza danych - CUSTOM USER">
-      <change afterPath="$PROJECT_DIR$/flotaut/badanie_techniczne/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/inspekcja/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/jednostka_organizacyjna/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/karty_paliwowe/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/templates/badanie_techniczne.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/templates/inspekcja.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/templates/jednostka_organizacyjna.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/templates/karty_paliwowe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/templates/pojazd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/templates/ubezpieczenie.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/templates/uzytkownik.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/ubezpieczenie/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/uzytkownik/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/media/zdjecia/WW569XS.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/migrations/0004_pojazd_zdjecie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/migrations/0005_alter_pojazd_rok_produkcji.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/migrations/0006_alter_pojazd_data_pierwszej_rejestracji_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/migrations/0007_alter_pojazd_ladownosc_alter_pojazd_liczba_miejsc_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/migrations/0008_alter_pojazd_pojemnosc_silnika.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/static_proj/app_jed_org.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/static_proj/app_pojazd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/static_proj/proj.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/templates/glowny.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/templates/pojazd_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/templates/potwierdz_usun_pojazd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/templates/registration/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flotaut/badanie_techniczne/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/badanie_techniczne/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flotaut/flotaut/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/flotaut/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flotaut/flotaut/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/flotaut/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flotaut/inspekcja/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/inspekcja/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/jednostka_organizacyjna/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/jednostka_organizacyjna/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flotaut/jednostka_organizacyjna/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/jednostka_organizacyjna/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flotaut/karty_paliwowe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/karty_paliwowe/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/pojazd/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/pojazd/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/pojazd/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/pojazd/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flotaut/pojazd/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/pojazd/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flotaut/ubezpieczenie/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/ubezpieczenie/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flotaut/uzytkownik/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/uzytkownik/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/templates/jednostka_organizacyjna.html" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/templates/jednostka_organizacyjna.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/templates/pojazd.html" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/templates/pojazd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/uzytkownik/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/uzytkownik/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="dynamiczne_template" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,6 +83,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\piotr\Desktop\PYTHON_KURS\PycharmProjects\flotaut\flotaut\static" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">

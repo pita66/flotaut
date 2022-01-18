@@ -1,0 +1,22 @@
+{% extends 'glowny.html' %}
+{% load bootstrap %}
+
+{% block tytul %} Zaloguj {% endblock %}
+
+{% block strona %}
+
+
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Zaloguj</h5>
+        <form method="post">
+            {% csrf_token %}
+            {{ form|bootstrap }}<br>
+            <button type="submit" class="btn btn-primary">Zaloguj <i class="fas fa-sign-in-alt"></i></button>
+        </form>
+          <a href="{% url 'wszystkie_pojazdy' %}"><i class="fas fa-2x fa-angle-double-left"></i></a> Cofnij
+      </div>
+    </div>
+
+{% endblock %}

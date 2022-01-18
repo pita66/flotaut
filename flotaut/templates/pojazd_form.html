@@ -1,0 +1,14 @@
+{% extends 'glowny.html' %}
+{% load bootstrap %}
+{% block tytul %} Nowy/Edytuj pojazd {% endblock %}
+
+{% block strona %}
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|bootstrap }}<br>
+        <button type="submit" class="btn btn-primary">Dodaj pojazd <i class="far fa-plus-square"></i></button>
+    </form>
+    <a href="{% url 'wszystkie_pojazdy' %}"><i class="fas fa-2x fa-angle-double-left"></i></a> Cofnij
+
+{% endblock %}

@@ -8,4 +8,7 @@ class Jednostka_Organizacyjna(models.Model):
     numer_domu = models.CharField(max_length=12)
 
     def __str__(self):
-        return self.nazwa
+        return self.jednostka_organizacyjna_wykaz()
+
+    def jednostka_organizacyjna_wykaz(self):
+        return '{} ({})'.format(self.nazwa, self.miejscowosc)
