@@ -4,17 +4,21 @@
 
 {% block strona %}
 
-    {% if user.is_authenticated %}
-        witaj {{ user.username }}<br>
-        <a href="{% url 'logout' %}">Logout <i class="fas fa-sign-out-alt"></i></a>
-    {% else %}
-        <a href="{% url 'login' %}">Login <i class="fas fa-sign-in-alt"></i></a>
-    {% endif %}
+    <div class="jumbotron">
+        {% if user.is_authenticated %}
+            <h1 class="display-4">witaj {{ user.username }} w programie flot<span style='color:#0d6efd'>a</span>ut</h1>
+            <a href="{% url 'logout' %}" class="btn">Logout <i class="fas fa-2x fa-sign-out-alt"></i></a>
+        {% else %}
+            <h1 class="display-4">witaj w programie flot<span style='color:#0d6efd'>a</span>ut</h1>
+            <a href="{% url 'login' %}" class="btn">Login <i class="fas fa-2x fa-sign-in-alt"></i></a>
+        {% endif %}
+    </div>
+
     <br>
 
     <hr>
 
-    <a href="{% url 'nowy_pojazd' %}"><i class="far fa-plus-square"></i></a> Nowy pojazd
+    <a href="{% url 'nowy_pojazd' %}" class="btn"><i class="far fa-2x fa-plus-square"></i> Nowy pojazd</a>
 
     <h2>Wykaz Pojazdów</h2>
 
@@ -26,12 +30,24 @@
     <hr>
 
         {% for Pojazd in pojazd %}
-            <div class="card" style="width: 36rem;">
+            <div class="card" style="width: 48rem;">
               <div class="card-body">
-                <h5 class="card-title">{{ Pojazd }}</h5>
-                <p class="card-text">Jednostka organizacyjna : {{ Pojazd.jednostka_organizacyjna }} <br> Użytkownik : {{ Pojazd.uzytkownik }}</p>
-                    <a href="{% url 'edytuj_pojazd' Pojazd.id  %}"><i class="far fa-2x fa-edit"></i></a>
-                    <a href="{% url 'usun_pojazd' Pojazd.id  %}"><i class="far fa-2x fa-trash-alt"></i></a>
+                  <img src="/media/{{Pojazd.zdjecie}}" class="pojazd_zdjecia">
+                  <div class="row">
+                      <div class="col-10">
+                          <h5 class="card-title">{{ Pojazd }}</h5>
+                      </div>
+
+                      <div class="col-2">
+                          <a href="{% url 'edytuj_pojazd' Pojazd.id  %}"><i class="far fa-2x fa-edit"></i></a>
+                          <a href="{% url 'usun_pojazd' Pojazd.id  %}"><i class="far fa-2x fa-trash-alt"></i></a>
+                      </div>
+
+                  </div>
+                  <div class="row">
+                      <p class="card-text">Jednostka organizacyjna : {{ Pojazd.jednostka_organizacyjna }} <br> Użytkownik : {{ Pojazd.uzytkownik }}</p>
+                  </div>
+
               </div>
             </div>
             <h3></h3>
