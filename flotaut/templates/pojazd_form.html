@@ -4,11 +4,27 @@
 
 {% block strona %}
 
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form|bootstrap }}<br>
-        <button type="submit" class="btn btn-primary">Dodaj pojazd <i class="far fa-plus-square"></i></button>
-    </form>
+    <div class="card" style="width: 36rem;">
+      <div class="card-body">
+          {% if nowy_pojazd %}
+            <h5 class="card-title">Dodaj nowy pojazd</h5>
+          {% else %}
+            <h5 class="card-title">Edytuj dane pojazdu</h5>
+          {% endif %}
+
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form|bootstrap }}<br>
+                    {% if nowy_pojazd %}
+                        <button type="submit" class="btn btn-primary">Dodaj pojazd <i class="far fa-2x fa-plus-square"></i></button>
+                    {% else %}
+                        <button type="submit" class="btn btn-primary">Zapisz zmianę <i class="far fa-2x fa-save"></i></button>
+                    {% endif %}
+            </form>
+
+      </div>
+    </div>
+
     <a href="{% url 'wszystkie_pojazdy' %}"><i class="fas fa-2x fa-angle-double-left"></i></a> Cofnij
 
 {% endblock %}

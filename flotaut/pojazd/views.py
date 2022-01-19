@@ -21,7 +21,7 @@ def nowy_pojazd(request):
         form.save()
         return redirect(wszystkie_pojazdy)
 
-    return render(request, 'pojazd_form.html', {'form': form})
+    return render(request, 'pojazd_form.html', {'form': form, 'nowy_pojazd': True})
 
 # Update
 
@@ -34,7 +34,7 @@ def edytuj_pojazd(request, id):
         form.save()
         return redirect(wszystkie_pojazdy)
 
-    return render(request, 'pojazd_form.html', {'form': form})
+    return render(request, 'pojazd_form.html', {'form': form, 'nowy_pojazd': False})
 
 # Delete
 

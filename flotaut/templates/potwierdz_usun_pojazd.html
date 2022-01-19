@@ -4,11 +4,16 @@
 
 {% block strona %}
 
-    <h3>Czy na pewno chcesz usunąć pojazd : {{ pojazd.numer_rejestracyjny }} ({{ pojazd.marka }} {{ pojazd.model }}) ?</h3>
-    <form method="post">
-        {% csrf_token %}
-        <button type="submit" class="btn btn-primary">Usuń pojazd <i class="far fa-trash-alt"></i></button>
-    </form>
+    <div class="card" style="width: 24rem;">
+      <div class="card-body">
+          <h5 class="card-title">Czy na pewno chcesz usunąć pojazd : {{ pojazd.numer_rejestracyjny }} ({{ pojazd.marka }} {{ pojazd.model }}) ?</h5>
+          <form method="post">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-danger">Usuń pojazd <i class="far fa-2x fa-trash-alt"></i></button>
+          </form>
+      </div>
+    </div>
+
     <a href="{% url 'wszystkie_pojazdy' %}"><i class="fas fa-2x fa-angle-double-left"></i></a> Cofnij
 
 {% endblock %}

@@ -1,33 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="552fd1bc-9589-479b-b9c6-a6aef0a458cc" name="Changes" comment="utworzona baza danych - CUSTOM USER">
-      <change afterPath="$PROJECT_DIR$/flotaut/media/zdjecia/WW569XS.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/migrations/0004_pojazd_zdjecie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/migrations/0005_alter_pojazd_rok_produkcji.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/migrations/0006_alter_pojazd_data_pierwszej_rejestracji_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/migrations/0007_alter_pojazd_ladownosc_alter_pojazd_liczba_miejsc_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/migrations/0008_alter_pojazd_pojemnosc_silnika.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/static_proj/app_jed_org.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/static_proj/app_pojazd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/static_proj/proj.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/templates/glowny.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/templates/pojazd_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/templates/potwierdz_usun_pojazd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flotaut/templates/registration/login.html" afterDir="false" />
+    <list default="true" id="552fd1bc-9589-479b-b9c6-a6aef0a458cc" name="Changes" comment="utworzona widok pojazd">
+      <change afterPath="$PROJECT_DIR$/flotaut/media/logoflotaut.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/media/logoflotaut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/media/zdjecia/WI1444A.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/migrations/0009_rename_przeznaczenia_pojazd_przeznaczenie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flotaut/pojazd/migrations/0010_alter_pojazd_data_pierwszej_rejestracji_and_more.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flotaut/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flotaut/flotaut/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/flotaut/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flotaut/flotaut/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/flotaut/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flotaut/jednostka_organizacyjna/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/jednostka_organizacyjna/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flotaut/jednostka_organizacyjna/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/jednostka_organizacyjna/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/pojazd/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/pojazd/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flotaut/pojazd/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/pojazd/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flotaut/pojazd/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/pojazd/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flotaut/pojazd/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/pojazd/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flotaut/templates/jednostka_organizacyjna.html" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/templates/jednostka_organizacyjna.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/static_proj/proj.css" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/static_proj/proj.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flotaut/templates/pojazd.html" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/templates/pojazd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flotaut/uzytkownik/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/uzytkownik/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/templates/pojazd_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/templates/pojazd_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/templates/potwierdz_usun_pojazd.html" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/templates/potwierdz_usun_pojazd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flotaut/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flotaut/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +52,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dynamiczne_template" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -210,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642019233751</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="utworzona widok pojazd">
+      <created>1642524303263</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1642524303263</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -248,7 +244,8 @@
     <MESSAGE value="utworzona baza danych - Badanie_Techniczne" />
     <MESSAGE value="utworzona baza danych - Karty_Paliwowe" />
     <MESSAGE value="utworzona baza danych - CUSTOM USER" />
-    <option name="LAST_COMMIT_MESSAGE" value="utworzona baza danych - CUSTOM USER" />
+    <MESSAGE value="utworzona widok pojazd" />
+    <option name="LAST_COMMIT_MESSAGE" value="utworzona widok pojazd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
