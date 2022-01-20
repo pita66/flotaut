@@ -1,24 +1,70 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Wykaz Jednostek Organizacyjnych</title>
-    <link rel="stylesheet" href="{% static 'app_jed_org.css' %}">
-</head>
-<body>
-    <h2>Wykaz Jednostek Organizacyjnych</h2>
+{% extends 'glowny.html' %}
+
+{% block tytul %} Wykaz jednostek organizacyjnych {% endblock %}
+
+{% block strona %}
+
+    <div class="jumbotron">
+        {% if user.is_authenticated %}
+            <h1 class="display-4">witaj {{ user.username }} w programie flot<span style='color:#0d6efd'>a</span>ut</h1>
+            <a href="{% url 'logout' %}" class="btn">Logout <i class="fas fa-2x fa-sign-out-alt"></i></a>
+        {% else %}
+            <h1 class="display-4">witaj w programie flot<span style='color:#0d6efd'>a</span>ut</h1>
+            <a href="{% url 'login' %}" class="btn">Login <i class="fas fa-2x fa-sign-in-alt"></i></a>
+        {% endif %}
+    </div>
+
+    <br>
+
+    <hr>
+
+    <a href="{% url 'wszystkie_pojazdy' %}" class="btn"><i class="fas fa-1x fa-car"></i> Pojazdy</a>
+    <a href="{% url 'wszystkie_jednostki' %}" class="btn"><i class="fas fa-1x fa-network-wired"></i> Jednostki Organizacyjne</a>
+    <a href="{% url 'wszyscy_uzytkownicy' %}" class="btn"><i class="fas fa-users"></i> Użytkownicy</a>
+    <a href="{% url 'wszystkie_ubezpieczenia' %}" class="btn"><i class="fas fa-shield-alt"></i> Polisy Ubezpieczeniowe</a>
+    <a href="{% url 'wszystkie_karty' %}" class="btn"><i class="far fa-credit-card"></i> Karty Paliwowe</a>
+    <a href="{% url 'wszystkie_koszty' %}" class="btn"><i class="fas fa-dollar-sign"></i> Koszty Eksploatacji</a>
+    <a href="{% url 'wszystkie_badania' %}" class="btn"><i class="fas fa-user-check"></i> Badania Techniczne</a>
+    <a href="{% url 'wszystkie_inspekcje' %}" class="btn"><i class="far fa-check-square"></i> Inspekcja Pojazdu</a>
+
+    <hr>
+
+<h2><span style='color:#0d6efd'>Wykaz Jednostek Organizacyjnych</span> <a href="{% url 'nowa_jednostka' %}" class="btn"><i class="far fa-1x fa-plus-square"></i> Nowa jednostka organizacyjna</a></h2>
 
     {% if jednostka_organizacyjna|length == 0 %}
         <h3>brak jednostek organizacyjnych</h3>
     {% else %}
-        <h3>ilość wszystkich jednostek organizacyjnych : {{ jednostka_organizacyjna|length }}</h3>
+        <h6>ilość wszystkich jednostek organizacyjnych w bazie danych : {{ jednostka_organizacyjna|length }}</h6>
+
+    <hr>
 
         {% for Jednostka_Organizacyjna in jednostka_organizacyjna %}
-            <p>{{ Jednostka_Organizacyjna }}</p>
+            <div class="card" style="width: 48rem;">
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col-10">
+                          <h5 class="card-title">{{ Jednostka_Organizacyjna.nazwa }}</h5>
+                      </div>
+
+                      <div class="col-2">
+                          <a href="{% url 'edytuj_jednostke' Jednostka_Organizacyjna.id  %}"><i class="far fa-2x fa-edit"></i></a>
+                          <a href="{% url 'usun_jednostke' Jednostka_Organizacyjna.id  %}"><i class="far fa-2x fa-trash-alt"></i></a>
+                      </div>
+
+                  </div>
+                  <div class="row">
+                      <p class="card-text">Adres : {{ Jednostka_Organizacyjna.miejscowosc }}, {{ Jednostka_Organizacyjna.ulica }} {{Jednostka_Organizacyjna.numer_domu}}</p>
+                  </div>
+
+              </div>
+            </div>
+            <h3></h3>
+            <p></p>
+
         {% endfor %}
+
+
 
     {% endif %}
 
-</body>
-</html>
+{% endblock %}

@@ -18,14 +18,23 @@
 
     <hr>
 
-    <a href="{% url 'nowy_pojazd' %}" class="btn"><i class="far fa-2x fa-plus-square"></i> Nowy pojazd</a>
+    <a href="{% url 'wszystkie_pojazdy' %}" class="btn"><i class="fas fa-1x fa-car"></i> Pojazdy</a>
+    <a href="{% url 'wszystkie_jednostki' %}" class="btn"><i class="fas fa-1x fa-network-wired"></i> Jednostki Organizacyjne</a>
+    <a href="{% url 'wszyscy_uzytkownicy' %}" class="btn"><i class="fas fa-users"></i> Użytkownicy</a>
+    <a href="{% url 'wszystkie_ubezpieczenia' %}" class="btn"><i class="fas fa-shield-alt"></i> Polisy Ubezpieczeniowe</a>
+    <a href="{% url 'wszystkie_karty' %}" class="btn"><i class="far fa-credit-card"></i> Karty Paliwowe</a>
+    <a href="{% url 'wszystkie_koszty' %}" class="btn"><i class="fas fa-dollar-sign"></i> Koszty Eksploatacji</a>
+    <a href="{% url 'wszystkie_badania' %}" class="btn"><i class="fas fa-user-check"></i> Badania Techniczne</a>
+    <a href="{% url 'wszystkie_inspekcje' %}" class="btn"><i class="far fa-check-square"></i> Inspekcja Pojazdu</a>
 
-    <h2>Wykaz Pojazdów</h2>
+    <hr>
+
+    <h2><span style='color:#0d6efd'>Wykaz Pojazdów</span> <a href="{% url 'nowy_pojazd' %}" class="btn"><i class="far fa-1x fa-plus-square"></i> Nowy pojazd</a></h2>
 
     {% if pojazd|length == 0 %}
-        <h4>brak pojazdów</h4>
+        <h3>brak pojazdów</h3>
     {% else %}
-        <h4>ilość wszystkich pojazdów : {{ pojazd|length }}</h4>
+        <h6>ilość wszystkich pojazdów w bazie danych : {{ pojazd|length }}</h6>
 
     <hr>
 

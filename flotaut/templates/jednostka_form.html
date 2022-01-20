@@ -1,0 +1,30 @@
+{% extends 'glowny.html' %}
+{% load bootstrap %}
+{% block tytul %} Nowa/Edytuj jednostkę organizacyjną {% endblock %}
+
+{% block strona %}
+
+    <div class="card" style="width: 36rem;">
+      <div class="card-body">
+          {% if nowa_jednostka %}
+            <h5 class="card-title">Dodaj nową jednostkę</h5>
+          {% else %}
+            <h5 class="card-title">Edytuj dane jednostki</h5>
+          {% endif %}
+
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form|bootstrap }}<br>
+                    {% if nowa_jednostka %}
+                        <button type="submit" class="btn btn-primary">Dodaj jednostkę <i class="far fa-2x fa-plus-square"></i></button>
+                    {% else %}
+                        <button type="submit" class="btn btn-primary">Zapisz zmianę <i class="far fa-2x fa-save"></i></button>
+                    {% endif %}
+            </form>
+
+      </div>
+    </div>
+
+    <a href="{% url 'wszystkie_jednostki' %}"><i class="fas fa-2x fa-angle-double-left"></i></a> Cofnij
+
+{% endblock %}
